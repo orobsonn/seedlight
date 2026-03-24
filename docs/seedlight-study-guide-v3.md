@@ -176,6 +176,8 @@ Para o Seedlight, isso significa que quando o Companion precisa decidir o próxi
 
 - **LightRAG** — github.com/HKUDS/LightRAG — RAG com grafos otimizado para eficiência. Candidato a adaptação para edge computing.
 
+- **MiniRAG** — github.com/HKUDS/MiniRAG — Do mesmo time do LightRAG, desenhado especificamente para SLMs (modelos de 1.5B parâmetros). Usa apenas 25% do armazenamento do RAG tradicional. Grafo heterogêneo que combina chunks de texto + entidades nomeadas. Precisão cai apenas 0.8%-20% vs LLMs completos. Candidato forte para o dispositivo Seedlight.
+
 #### Desafio Técnico: GraphRAG no Dispositivo
 
 O Microsoft GraphRAG original foi desenhado para rodar em servidores potentes. O Seedlight precisa de uma versão que rode num Raspberry Pi. Isso significa: grafo pré-construído e armazenado em SQLite (não construído on-the-fly), travessia de grafo com algoritmos leves (BFS/DFS limitado, não community detection em tempo real), embeddings gerados localmente via llama.cpp, e cache agressivo de sub-grafos frequentemente acessados. Isso é engenharia nova — não existe referência pronta. É onde o Seedlight inova.
@@ -184,7 +186,7 @@ O Microsoft GraphRAG original foi desenhado para rodar em servidores potentes. O
 
 - **SQLite** — sqlite.org — O grafo de conceitos será modelado em SQLite com tabelas de nós, arestas e propriedades. Sem necessidade de Neo4j no dispositivo.
 
-- **SQLite VSS** — github.com/asg017/sqlite-vss — Extensão para busca vetorial em SQLite. Permite componente de similaridade semântica em conjunto com a travessia de grafo. GraphRAG híbrido local.
+- **sqlite-vec** — github.com/asg017/sqlite-vec — Extensão para busca vetorial em SQLite, sucessor do sqlite-vss (deprecated). C puro, zero dependências, roda em qualquer plataforma onde SQLite roda (incluindo Raspberry Pi Zero). Suporta bit vectors para redução de 32x no espaço. Para o currículo escolar (~500-2000 conceitos), busca brute-force é instantânea.
 
 - **NetworkX** — github.com/networkx/networkx — Para prototipagem e validação de algoritmos de travessia do grafo curricular.
 
@@ -318,7 +320,7 @@ Esta é a fronteira que pode transformar o Seedlight. Um modelo genérico de 1.5
 
 - **GAIR-NLP/DeepResearcher** — github.com/GAIR-NLP/DeepResearcher — Framework completo de treinamento de agentes com RL em ambientes reais. Baseado no veRL. Estudar a fundo: como eles definem rewards, como escalam o treinamento, como lidam com os desafios técnicos de RL em ambientes reais.
 
-- **veRL** — O framework de RL para LLMs usado pelo DeepResearcher. Suporta GRPO, PPO, e outros algoritmos. Compatível com Hugging Face Transformers.
+- **veRL** — O framework de RL para LLMs usado pelo DeepResearcher. Suporta GRPO, PPO, e outros algoritmos. Compatível com Hugging Face Transformers. **Nota: GRPO (Group Relative Policy Optimization) é o algoritmo recomendado para o Seedlight** — não precisa de value model separado, economizando ~30-40% de memória GPU vs PPO. Com GRPO, treinar um modelo de 1.5B é viável em 1x RTX 4090 com LoRA.
 
 - **Tongyi DeepResearch** — github (buscar "tongyi-agent") — Outro framework aberto que vai do pré-treinamento agêntico ao SFT ao RL, com modelo 30B-A3B (Mixture of Experts). Interessante por demonstrar o pipeline completo de treinamento.
 
@@ -370,7 +372,7 @@ O Seedlight se compromete com auditoria pública de bias. Você precisa saber co
 
 - **AI Fairness 360** — github.com/Trusted-AI/AIF360 — Toolkit IBM com métricas de fairness e algoritmos de mitigação.
 
-- **Aequitas** — github.com/dssg/aequitas — Ferramenta de auditoria de bias do Data Science for Social Good.
+- **Aequitas** — github.com/dssg/aequitas — Ferramenta de auditoria de bias do Data Science for Social Good. **Insight chave para o Seedlight:** Aequitas formaliza a distinção entre intervenções assistivas (educação) e punitivas (justiça criminal). Em educação, onde o sistema AJUDA crianças, o erro mais grave é o **falso negativo** — não identificar uma criança que precisa de apoio. Isso é fundamentalmente diferente de outros domínios e deve guiar a escolha de métricas de fairness.
 
 ---
 

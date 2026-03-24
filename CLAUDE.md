@@ -114,11 +114,15 @@ Regra: maximo 3-4 tags por nota.
 - `/insight` — registra insight no vault com classificacao e links
 - `/review` — revisao de fim de sessao. Extrai insights nao registrados, cria journal entry, atualiza dashboard
 - `/progress` — dashboard de progresso geral
-- `/synthesize` — analise cruzada do vault (ativar quando tiver multiplos clusters com 3+ nos)
+- `/synthesize` — *(planejado, ainda nao implementado)* analise cruzada do vault
 
 ### Ciclo de Vida da Sessao
 
 `/study` → (estudo + `/insight` durante) → `/review` → sessao encerrada. Sempre rodar `/review` antes de iniciar novo `/study`.
+
+### Lembrete de Review
+
+Ao final de conversas longas sobre estudo (quando o contexto esta ficando grande ou o usuario indica que vai encerrar), lembre de rodar `/review` se ainda nao foi feito na sessao. Alerte: "Quer que eu rode /review antes de encerrar? Garante que nenhum insight se perca."
 
 ## Guia de Estudos
 
