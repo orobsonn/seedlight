@@ -30,11 +30,11 @@ last-updated: 2026-03-26
   - [x] Assimilacao vs Acomodacao: como aprendemos coisas novas
   - [x] Estagios de desenvolvimento: por que idade importa no design
   - [x] Implicacao pro Seedlight: por que o Emergent Curriculum faz sentido
-- [ ] ZDP (Vygotsky) — a faixa onde aprendizagem acontece
-  - [ ] Zona de Desenvolvimento Proximal: o que a crianca consegue COM ajuda
-  - [ ] Scaffolding: como dosar a ajuda e ir retirando
-  - [ ] Papel do "outro mais capaz": o que o Companion precisa ser
-  - [ ] Implicacao pro Seedlight: como calibrar o nivel do Companion
+- [x] ZDP (Vygotsky) — a faixa onde aprendizagem acontece
+  - [x] Zona de Desenvolvimento Proximal: o que a crianca consegue COM ajuda
+  - [x] Scaffolding: como dosar a ajuda e ir retirando
+  - [x] Papel do "outro mais capaz": o que o Companion precisa ser
+  - [x] Implicacao pro Seedlight: como calibrar o nivel do Companion
 - [ ] Construcionismo (Papert) — aprender fazendo coisas significativas
   - [ ] De Piaget para Papert: o que Papert adicionou
   - [ ] Micromundos e "objetos para pensar": ambientes de exploracao
@@ -147,10 +147,10 @@ last-updated: 2026-03-26
 ## Contadores
 
 - **Sources estudadas:** 1
-- **Conceitos registrados:** 2
-- **Design notes:** 6
+- **Conceitos registrados:** 3
+- **Design notes:** 8
 - **Duvidas abertas:** 2
-- **Conexoes no grafo:** 16
+- **Conexoes no grafo:** 28
 
 ## Sessoes Recentes
 
