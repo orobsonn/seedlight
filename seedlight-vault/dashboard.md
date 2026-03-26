@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-03-24
+last-updated: 2026-03-26
 ---
 
 # Seedlight Study Dashboard
@@ -8,7 +8,7 @@ last-updated: 2026-03-24
 
 | Fase | Nome | Semanas | Status |
 |------|------|---------|--------|
-| 1 | Fundacao Conceitual | 1-4 | nao iniciada |
+| 1 | Fundacao Conceitual | 1-4 | em andamento |
 | 2 | Hardware e Modelos Pequenos | 5-8 | nao iniciada |
 | 3 | Agentes, GraphRAG e Arquitetura | 9-12 | nao iniciada |
 | 4 | Infra Offline e Estudos de Caso | 13-16 | nao iniciada |
@@ -22,9 +22,53 @@ last-updated: 2026-03-24
 ### Fase 1 — Fundacao Conceitual (Semanas 1-4)
 
 **Area 1 — Ciencias da Aprendizagem**
-- [ ] 1.1 Teorias Fundamentais (Piaget, Vygotsky, Papert)
-- [ ] 1.2 Aprendizagem Adaptativa e Personalizada
-- [ ] 1.3 Avaliacao e Medicao de Aprendizagem
+
+1.1 Teorias Fundamentais
+- [x] 2 Sigma Problem (Bloom) — por que tutoria 1-a-1 funciona, os 4 mecanismos
+- [ ] Construtivismo (Piaget) — conhecimento e construido, nao transmitido
+  - [ ] Esquemas mentais: como o cerebro organiza conhecimento
+  - [ ] Assimilacao vs Acomodacao: como aprendemos coisas novas
+  - [ ] Estagios de desenvolvimento: por que idade importa no design
+  - [ ] Implicacao pro Seedlight: por que o Emergent Curriculum faz sentido
+- [ ] ZDP (Vygotsky) — a faixa onde aprendizagem acontece
+  - [ ] Zona de Desenvolvimento Proximal: o que a crianca consegue COM ajuda
+  - [ ] Scaffolding: como dosar a ajuda e ir retirando
+  - [ ] Papel do "outro mais capaz": o que o Companion precisa ser
+  - [ ] Implicacao pro Seedlight: como calibrar o nivel do Companion
+- [ ] Construcionismo (Papert) — aprender fazendo coisas significativas
+  - [ ] De Piaget para Papert: o que Papert adicionou
+  - [ ] Micromundos e "objetos para pensar": ambientes de exploracao
+  - [ ] Powerful Ideas: ideias que mudam como a crianca pensa
+  - [ ] Implicacao pro Seedlight: como o curriculo deve emergir
+- [ ] Situated Learning (Lave & Wenger) — aprendizagem em contexto real
+  - [ ] Participacao periferica legitima: aprender fazendo de verdade
+  - [ ] Implicacao pro Seedlight: por que o Context Adapter e essencial
+
+1.2 Aprendizagem Adaptativa e Personalizada
+- [ ] Mastery Learning (Bloom 1968) — todos aprendem se tiverem tempo e instrucao adequada
+  - [ ] O principio: ritmo individual vs ritmo da turma
+  - [ ] Implicacao pro Seedlight: como o BKT implementa pacing adaptativo
+- [ ] Self-Determination Theory (Ryan & Deci) — motivacao intrinseca
+  - [ ] Autonomia, competencia e conexao: os 3 pilares
+  - [ ] Motivacao intrinseca vs extrinseca: por que notas nao funcionam
+  - [ ] Implicacao pro Seedlight: como substituir notas por significado
+- [ ] Productive Failure (Kapur) — fracasso que ensina
+  - [ ] Quando errar e bom: frustacao produtiva vs improdutiva
+  - [ ] Implicacao pro Seedlight: como o Companion calibra desafios
+- [ ] Desirable Difficulties (Bjork & Bjork) — dificuldades que melhoram retencao
+  - [ ] Spacing, interleaving, retrieval practice
+  - [ ] Implicacao pro Seedlight: estrategias de revisao no Companion
+
+1.3 Avaliacao e Medicao de Aprendizagem
+- [ ] Assessment baseado em evidencia (NRC 2001) — o triangulo da avaliacao
+  - [ ] Cognicao, observacao, interpretacao
+  - [ ] Implicacao pro Seedlight: como medir sem prova
+- [ ] Evidence-Centered Design (Mislevy et al.) — framework de design de avaliacao
+  - [ ] Modelo do aluno, modelo de tarefa, modelo de evidencia
+  - [ ] Implicacao pro Seedlight: arquitetura do Learner Profile
+- [ ] Stealth Assessment (Shute) — avaliacao invisivel
+  - [ ] Avaliar dentro da atividade sem a crianca perceber
+  - [ ] Implicacao pro Seedlight: como coletar evidencia naturalmente
 
 **Area 6 — Equidade Algoritmica e Justica em IA**
 - [ ] 6.1 Fundamentos de Fairness em ML
@@ -102,12 +146,12 @@ last-updated: 2026-03-24
 
 ## Contadores
 
-- **Sources estudadas:** 0
-- **Conceitos registrados:** 0
-- **Design notes:** 0
-- **Duvidas abertas:** 0
-- **Conexoes no grafo:** 0
+- **Sources estudadas:** 1
+- **Conceitos registrados:** 1
+- **Design notes:** 3
+- **Duvidas abertas:** 2
+- **Conexoes no grafo:** 7
 
 ## Sessoes Recentes
 
-*Nenhuma sessao registrada ainda.*
+- **2026-03-25** — Bloom 1984 (2 Sigma Problem). Extraido conceito central + design note mapeando mecanismos de tutoria para componentes. Sessao interrompida por crash.
