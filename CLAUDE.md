@@ -120,6 +120,14 @@ Regra: maximo 3-4 tags por nota.
 
 `/study` → (estudo + `/insight` durante) → `/review` → sessao encerrada. Sempre rodar `/review` antes de iniciar novo `/study`.
 
+### Estrategia de Commits
+
+Commitar ao final de cada topico de estudo dominado. Cada commit e um marco de aprendizado.
+
+- Separar em commits distintos: notas de estudo vs arquivos binarios (PDFs) vs config
+- Usar `/commit` para seguir o padrao Conventional Commits
+- Formato: `docs: estudo [autor/tema] — [resumo do que foi produzido]`
+
 ### Lembrete de Review
 
 Ao final de conversas longas sobre estudo (quando o contexto esta ficando grande ou o usuario indica que vai encerrar), lembre de rodar `/review` se ainda nao foi feito na sessao. Alerte: "Quer que eu rode /review antes de encerrar? Garante que nenhum insight se perca."
