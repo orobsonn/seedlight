@@ -4,7 +4,6 @@ status: hypothesis
 based-on: ["[[two-sigma-problem]]"]
 tags: [foundational, scaffolding]
 ---
-
 # Companion — Mapeamento dos Mecanismos de Tutoria
 
 ## Decisao / Hipotese
