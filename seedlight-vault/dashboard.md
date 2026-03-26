@@ -25,11 +25,11 @@ last-updated: 2026-03-26
 
 1.1 Teorias Fundamentais
 - [x] 2 Sigma Problem (Bloom) — por que tutoria 1-a-1 funciona, os 4 mecanismos
-- [ ] Construtivismo (Piaget) — conhecimento e construido, nao transmitido
-  - [ ] Esquemas mentais: como o cerebro organiza conhecimento
-  - [ ] Assimilacao vs Acomodacao: como aprendemos coisas novas
-  - [ ] Estagios de desenvolvimento: por que idade importa no design
-  - [ ] Implicacao pro Seedlight: por que o Emergent Curriculum faz sentido
+- [x] Construtivismo (Piaget) — conhecimento e construido, nao transmitido
+  - [x] Esquemas mentais: como o cerebro organiza conhecimento
+  - [x] Assimilacao vs Acomodacao: como aprendemos coisas novas
+  - [x] Estagios de desenvolvimento: por que idade importa no design
+  - [x] Implicacao pro Seedlight: por que o Emergent Curriculum faz sentido
 - [ ] ZDP (Vygotsky) — a faixa onde aprendizagem acontece
   - [ ] Zona de Desenvolvimento Proximal: o que a crianca consegue COM ajuda
   - [ ] Scaffolding: como dosar a ajuda e ir retirando
@@ -147,10 +147,10 @@ last-updated: 2026-03-26
 ## Contadores
 
 - **Sources estudadas:** 1
-- **Conceitos registrados:** 1
-- **Design notes:** 3
+- **Conceitos registrados:** 2
+- **Design notes:** 6
 - **Duvidas abertas:** 2
-- **Conexoes no grafo:** 7
+- **Conexoes no grafo:** 16
 
 ## Sessoes Recentes
 
