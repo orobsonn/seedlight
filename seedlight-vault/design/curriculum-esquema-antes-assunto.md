@@ -27,7 +27,8 @@ A nota [[companion-mecanismos-tutoria]] mapeia diagnostico continuo para BKT + a
 
 - Requer que o Companion construa e mantenha um modelo do mundo da crianca ao longo do tempo — isso reforça a necessidade de GraphRAG e memoria persistente
 - O Context Adapter ganha um papel ainda mais central: nao e so adaptar linguagem, e adaptar o *caminho curricular* inteiro
-- Tensao aberta: se o curriculo emerge dos esquemas, como garantir cobertura de conteudo obrigatorio? (a ser explorada quando estudarmos Papert e Emergent Curriculum)
+- Tensao aberta: se o curriculo emerge dos esquemas, como garantir cobertura de conteudo obrigatorio? (a ser explorada quando estudarmos Situated Learning)
+- O [[construcionismo]] reforça esta direcao: a porta de entrada deve ser o mundo da crianca, e o [[curriculum-contexto-local-vem-da-crianca]] formaliza que o conhecimento local vem da crianca pela interacao, nao do sistema
 
 ## Status
 
