@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-03-26
+last-updated: 2026-03-27
 ---
 
 # Seedlight Study Dashboard
@@ -35,11 +35,11 @@ last-updated: 2026-03-26
   - [x] Scaffolding: como dosar a ajuda e ir retirando
   - [x] Papel do "outro mais capaz": o que o Companion precisa ser
   - [x] Implicacao pro Seedlight: como calibrar o nivel do Companion
-- [ ] Construcionismo (Papert) — aprender fazendo coisas significativas
-  - [ ] De Piaget para Papert: o que Papert adicionou
-  - [ ] Micromundos e "objetos para pensar": ambientes de exploracao
-  - [ ] Powerful Ideas: ideias que mudam como a crianca pensa
-  - [ ] Implicacao pro Seedlight: como o curriculo deve emergir
+- [x] Construcionismo (Papert) — aprender fazendo coisas significativas
+  - [x] De Piaget para Papert: o que Papert adicionou
+  - [x] Micromundos e "objetos para pensar": ambientes de exploracao
+  - [x] Powerful Ideas: ideias que mudam como a crianca pensa
+  - [x] Implicacao pro Seedlight: como o curriculo deve emergir
 - [ ] Situated Learning (Lave & Wenger) — aprendizagem em contexto real
   - [ ] Participacao periferica legitima: aprender fazendo de verdade
   - [ ] Implicacao pro Seedlight: por que o Context Adapter e essencial
@@ -146,13 +146,14 @@ last-updated: 2026-03-26
 
 ## Contadores
 
-- **Sources estudadas:** 1
-- **Conceitos registrados:** 3
-- **Design notes:** 8
-- **Duvidas abertas:** 2
-- **Conexoes no grafo:** 28
+- **Sources estudadas:** 2
+- **Conceitos registrados:** 5
+- **Design notes:** 13
+- **Duvidas abertas:** 4
+- **Conexoes no grafo:** 38
 
 ## Sessoes Recentes
 
 - **2026-03-25** — Bloom 1984 (2 Sigma Problem). Extraido conceito central + design note mapeando mecanismos de tutoria para componentes. Sessao interrompida por crash.
 - **2026-03-26** — Piaget (esquemas, assimilacao/acomodacao, estagios) + Vygotsky (ZDP, scaffolding, MKO). 7 insights registrados. Proximo: Papert.
+- **2026-03-27** — Revisao (Bloom+Piaget+Vygotsky) + Papert (construcionismo, microworlds, powerful ideas). 6 insights registrados. Tensoes resolvidas: cobertura curricular e Piaget vs Vygotsky. Proximo: Situated Learning.
