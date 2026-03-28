@@ -19,8 +19,10 @@ A escola rejeita teorias falsas como erros a corrigir. Papert argumenta que essa
 
 Nem toda teoria falsa e produtiva. A distincao nao e por "quao errada" ela e, mas por **quao produtiva e pro desenvolvimento cognitivo**:
 
-- **Teoria falsa produtiva**: a crianca esta exercitando raciocinio valido (observacao, causalidade, teste), so o conteudo factual e errado. O processo de pensar esta se fortalecendo
-- **Teoria falsa que bloqueia**: a crianca esta construindo um esquema que vai impedir acomodacao futura — um modelo mental que fecha portas em vez de abrir
+- **Teoria falsa produtiva (abre portas)**: a crianca esta exercitando raciocinio valido (observacao, causalidade, teste), so o conteudo factual e errado. O processo de pensar esta se fortalecendo. Sao teorias erradas *sobre o mundo* — "as arvores fazem vento" exercita raciocinio causal que vai servir em outros dominios. A teoria morre, a habilidade de pensar fica
+- **Teoria falsa destrutiva (fecha portas)**: a crianca esta construindo um esquema que vai impedir acomodacao futura — um modelo mental que paralisa. Sao tipicamente teorias erradas *sobre si mesma ou sobre como conhecimento funciona* — "matematica e pra gente inteligente, eu sou burro" bloqueia tentativas futuras num dominio inteiro. "So existe uma resposta certa e o professor sabe" mata a disposicao de formular hipoteses proprias
+
+**Regra pratica pro Companion**: se a crianca esta raciocinando ativamente (mesmo chegando em conclusao errada), deixa. Se a crianca esta construindo uma narrativa que a faz desistir de raciocinar, intervem
 
 ## Por que importa para o Seedlight
 

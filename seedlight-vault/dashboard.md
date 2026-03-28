@@ -40,9 +40,9 @@ last-updated: 2026-03-27
   - [x] Micromundos e "objetos para pensar": ambientes de exploracao
   - [x] Powerful Ideas: ideias que mudam como a crianca pensa
   - [x] Implicacao pro Seedlight: como o curriculo deve emergir
-- [ ] Situated Learning (Lave & Wenger) — aprendizagem em contexto real
-  - [ ] Participacao periferica legitima: aprender fazendo de verdade
-  - [ ] Implicacao pro Seedlight: por que o Context Adapter e essencial
+- [x] Situated Learning (Lave & Wenger) — aprendizagem em contexto real
+  - [x] Participacao periferica legitima: aprender fazendo de verdade
+  - [x] Implicacao pro Seedlight: por que o Context Adapter e essencial
 
 1.2 Aprendizagem Adaptativa e Personalizada
 - [ ] Mastery Learning (Bloom 1968) — todos aprendem se tiverem tempo e instrucao adequada
@@ -146,14 +146,14 @@ last-updated: 2026-03-27
 
 ## Contadores
 
-- **Sources estudadas:** 2
-- **Conceitos registrados:** 5
+- **Sources estudadas:** 3
+- **Conceitos registrados:** 7
 - **Design notes:** 13
 - **Duvidas abertas:** 4
-- **Conexoes no grafo:** 38
+- **Conexoes no grafo:** 45
 
 ## Sessoes Recentes
 
 - **2026-03-25** — Bloom 1984 (2 Sigma Problem). Extraido conceito central + design note mapeando mecanismos de tutoria para componentes. Sessao interrompida por crash.
 - **2026-03-26** — Piaget (esquemas, assimilacao/acomodacao, estagios) + Vygotsky (ZDP, scaffolding, MKO). 7 insights registrados. Proximo: Papert.
-- **2026-03-27** — Revisao (Bloom+Piaget+Vygotsky) + Papert (construcionismo, microworlds, powerful ideas). 6 insights registrados. Tensoes resolvidas: cobertura curricular e Piaget vs Vygotsky. Proximo: Situated Learning.
+- **2026-03-27** — Sessao 1: Revisao (Bloom+Piaget+Vygotsky) + Papert (construcionismo, microworlds, powerful ideas). Sessao 2: Revisao dos 4 autores + Lave & Wenger (cognicao situada, LPP). Area 1.1 concluida. Proximo: Area 1.2 (Mastery Learning).

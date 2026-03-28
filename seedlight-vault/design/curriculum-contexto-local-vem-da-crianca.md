@@ -1,7 +1,7 @@
 ---
 seedlight-component: context-adapter
 status: hypothesis
-based-on: ["[[construcionismo]]", "[[esquemas-mentais]]"]
+based-on: ["[[construcionismo]]", "[[esquemas-mentais]]", "[[cognicao-situada]]"]
 tags: [foundational, offline-first]
 ---
 
@@ -24,6 +24,8 @@ Exemplo: a crianca diz "a agua do acude secou". O Companion nao precisa saber a 
 O [[construcionismo]] de Papert e o principio [[curriculum-esquema-antes-assunto]] estabelecem que a porta de entrada para o conhecimento deve ser o mundo da crianca. Mas armazenar todo o conhecimento local de cada regiao e inviavel para um sistema on-device num Raspberry Pi com modelo de 1-3B.
 
 A solucao e arquiteturalmente elegante: os [[esquemas-mentais]] da crianca ja carregam o conhecimento local. O Context Adapter precisa apenas **ouvir e conectar**, nao armazenar. Isso inverte a carga: o sistema e leve (fundamentos universais), e o conhecimento local emerge da interacao, capturado pelo GraphRAG no Learner Profile.
+
+A [[cognicao-situada]] de Lave fornece a fundamentacao teorica formal: se conhecimento e inseparavel do contexto onde foi produzido, ensinar sem o contexto da crianca nao e apenas "menos interessante" — e ensinar no vacuo. O Context Adapter nao "personaliza exemplos" de conceitos abstratos; ele garante que o conhecimento **nasce** no contexto da crianca. Sem o acude de Campina Grande, o conceito de evaporacao nao gruda — fica conhecimento escolar que nao transfere, como as fracoes da dona de casa no supermercado vs na escola.
 
 ## Trade-offs
 
