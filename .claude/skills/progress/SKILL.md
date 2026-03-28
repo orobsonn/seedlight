@@ -1,7 +1,6 @@
 ---
 name: progress
 description: Mostra o progresso geral do estudo do Seedlight. Le o dashboard e apresenta visao geral de onde estamos.
-disable-model-invocation: true
 ---
 
 # Progresso de Estudo — Seedlight

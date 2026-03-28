@@ -1,7 +1,6 @@
 ---
 name: review
 description: Revisao de fim de sessao de estudo. Extrai insights nao registrados, cria journal entry, atualiza dashboard. Use ao final de cada sessao de estudo.
-disable-model-invocation: true
 ---
 
 # Review de Sessao — Seedlight
