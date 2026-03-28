@@ -45,9 +45,9 @@ last-updated: 2026-03-27
   - [x] Implicacao pro Seedlight: por que o Context Adapter e essencial
 
 1.2 Aprendizagem Adaptativa e Personalizada
-- [ ] Mastery Learning (Bloom 1968) — todos aprendem se tiverem tempo e instrucao adequada
-  - [ ] O principio: ritmo individual vs ritmo da turma
-  - [ ] Implicacao pro Seedlight: como o BKT implementa pacing adaptativo
+- [x] Mastery Learning (Bloom 1968) — todos aprendem se tiverem tempo e instrucao adequada
+  - [x] O principio: ritmo individual vs ritmo da turma
+  - [x] Implicacao pro Seedlight: como o BKT implementa pacing adaptativo
 - [ ] Self-Determination Theory (Ryan & Deci) — motivacao intrinseca
   - [ ] Autonomia, competencia e conexao: os 3 pilares
   - [ ] Motivacao intrinseca vs extrinseca: por que notas nao funcionam
@@ -147,8 +147,8 @@ last-updated: 2026-03-27
 ## Contadores
 
 - **Sources estudadas:** 3
-- **Conceitos registrados:** 7
-- **Design notes:** 13
+- **Conceitos registrados:** 9
+- **Design notes:** 15
 - **Duvidas abertas:** 4
 - **Conexoes no grafo:** 45
 
@@ -156,4 +156,4 @@ last-updated: 2026-03-27
 
 - **2026-03-25** — Bloom 1984 (2 Sigma Problem). Extraido conceito central + design note mapeando mecanismos de tutoria para componentes. Sessao interrompida por crash.
 - **2026-03-26** — Piaget (esquemas, assimilacao/acomodacao, estagios) + Vygotsky (ZDP, scaffolding, MKO). 7 insights registrados. Proximo: Papert.
-- **2026-03-27** — Sessao 1: Revisao (Bloom+Piaget+Vygotsky) + Papert (construcionismo, microworlds, powerful ideas). Sessao 2: Revisao dos 4 autores + Lave & Wenger (cognicao situada, LPP). Area 1.1 concluida. Proximo: Area 1.2 (Mastery Learning).
+- **2026-03-27** — Sessao 1: Revisao (Bloom+Piaget+Vygotsky) + Papert (construcionismo, microworlds, powerful ideas). Sessao 2: Revisao dos 4 autores + Lave & Wenger (cognicao situada, LPP). Area 1.1 concluida. Sessao 3: Mastery Learning (Bloom 1968) — dominio antes de avanco, aptidao como velocidade, 4 barreiras de escala. Proximo: SDT (Ryan & Deci).

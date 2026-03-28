@@ -39,4 +39,4 @@ Os [[esquemas-mentais]] de Piaget sao a mecanica interna: a crianca constroi esq
 
 ## Status
 
-Hipotese. Define a filosofia de organizacao do Knowledge Graph. Validacao depende do design do GraphRAG (Fase 3) e da curadoria das powerful ideas fundamentais.
+Hipotese. Define a filosofia de organizacao do Knowledge Graph. Validacao depende do design do GraphRAG (Fase 3) e da curadoria das powerful ideas fundamentais. A centralidade dos nos neste grafo tambem determina o [[bkt-threshold-dinamico-por-grafo|threshold de dominio exigido pelo BKT]] — nos centrais (powerful ideas) exigem dominio mais alto antes de avancar.
