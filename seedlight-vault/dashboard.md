@@ -55,20 +55,20 @@ last-updated: 2026-03-29
 - [x] Productive Failure (Kapur) — fracasso que ensina
   - [x] Quando errar e bom: frustacao produtiva vs improdutiva
   - [x] Implicacao pro Seedlight: como o Companion calibra desafios
-- [ ] Desirable Difficulties (Bjork & Bjork) — dificuldades que melhoram retencao
-  - [ ] Spacing, interleaving, retrieval practice
-  - [ ] Implicacao pro Seedlight: estrategias de revisao no Companion
+- [x] Desirable Difficulties (Bjork & Bjork) — dificuldades que melhoram retencao
+  - [x] Spacing, interleaving, retrieval practice
+  - [x] Implicacao pro Seedlight: estrategias de revisao no Companion
 
 1.3 Avaliacao e Medicao de Aprendizagem
-- [ ] Assessment baseado em evidencia (NRC 2001) — o triangulo da avaliacao
-  - [ ] Cognicao, observacao, interpretacao
-  - [ ] Implicacao pro Seedlight: como medir sem prova
-- [ ] Evidence-Centered Design (Mislevy et al.) — framework de design de avaliacao
-  - [ ] Modelo do aluno, modelo de tarefa, modelo de evidencia
-  - [ ] Implicacao pro Seedlight: arquitetura do Learner Profile
-- [ ] Stealth Assessment (Shute) — avaliacao invisivel
-  - [ ] Avaliar dentro da atividade sem a crianca perceber
-  - [ ] Implicacao pro Seedlight: como coletar evidencia naturalmente
+- [x] Assessment baseado em evidencia (NRC 2001) — o triangulo da avaliacao
+  - [x] Cognicao, observacao, interpretacao
+  - [x] Implicacao pro Seedlight: como medir sem prova
+- [x] Evidence-Centered Design (Mislevy et al.) — framework de design de avaliacao
+  - [x] Modelo do aluno, modelo de tarefa, modelo de evidencia
+  - [x] Implicacao pro Seedlight: arquitetura do Learner Profile
+- [x] Stealth Assessment (Shute) — avaliacao invisivel
+  - [x] Avaliar dentro da atividade sem a crianca perceber
+  - [x] Implicacao pro Seedlight: como coletar evidencia naturalmente
 
 **Area 6 — Equidade Algoritmica e Justica em IA**
 - [ ] 6.1 Fundamentos de Fairness em ML
@@ -147,10 +147,10 @@ last-updated: 2026-03-29
 ## Contadores
 
 - **Sources estudadas:** 5
-- **Conceitos registrados:** 13
-- **Design notes:** 19
-- **Duvidas abertas:** 7
-- **Conexoes no grafo:** 59
+- **Conceitos registrados:** 16
+- **Design notes:** 22
+- **Duvidas abertas:** 10
+- **Conexoes no grafo:** 74
 
 ## Sessoes Recentes
 
@@ -158,4 +158,4 @@ last-updated: 2026-03-29
 - **2026-03-26** — Piaget (esquemas, assimilacao/acomodacao, estagios) + Vygotsky (ZDP, scaffolding, MKO). 7 insights registrados. Proximo: Papert.
 - **2026-03-27** — Sessao 1: Revisao (Bloom+Piaget+Vygotsky) + Papert (construcionismo, microworlds, powerful ideas). Sessao 2: Revisao dos 4 autores + Lave & Wenger (cognicao situada, LPP). Area 1.1 concluida. Sessao 3: Mastery Learning (Bloom 1968) — dominio antes de avanco, aptidao como velocidade, 4 barreiras de escala. Proximo: SDT (Ryan & Deci).
 - **2026-03-28** — Revisao geral (5 autores + Mastery Learning; fragil em estagios Piaget e LPP) + SDT (Ryan & Deci): 3 necessidades basicas, continuum, undermining effect, contexto sustentador vs controlador. 4 insights registrados. Proximo: Productive Failure (Kapur).
-- **2026-03-29** — Productive Failure (Kapur): 3 mecanismos + 3 condicoes de design, tensao suporte vs fracasso resolvida via engagement detector, BKT como decisor de tipo de instrucao. 3 insights registrados. Estagios Piaget e nomes SDT continuam frageis. Proximo: Desirable Difficulties (Bjork & Bjork).
+- **2026-03-29** — Sessao 1: Productive Failure (Kapur): 3 mecanismos + 3 condicoes de design, tensao suporte vs fracasso resolvida via engagement detector, BKT como decisor de tipo de instrucao. Sessao 2: Desirable Difficulties (Bjork & Bjork) — spacing, interleaving, retrieval practice, BKT com decaimento temporal. Area 1.3 completa: Triangulo NRC, ECD (Mislevy), Stealth Assessment (Shute) — evidence rules como tool do Companion, grafo pre-definido com caminho emergente. 7 insights registrados. Areas 1.1, 1.2 e 1.3 concluidas. Proximo: Area 6 (Equidade Algoritmica).
