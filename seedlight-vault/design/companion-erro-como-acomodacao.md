@@ -30,7 +30,7 @@ A nota [[companion-checkpoints-vs-inferencia]] levanta a questao de como verific
 - Requer que o LLM gere perguntas socraticas contextualizadas, nao apenas respostas corretas — mais exigente em termos de capacidade do modelo. A nota [[companion-verbalizacao-como-aprendizagem]] refina: nao basta perguntar, o scaffolding deve garantir que a *crianca* verbalize a conclusao
 - Mais lento que correcao direta, o que tensiona com engajamento (a crianca pode se frustrar)
 - Precisa distinguir quando usar esta abordagem (erros conceituais) vs quando correcao direta e adequada (erros factuais simples, como "2+2=5")
-- Conecta com Productive Failure (Kapur, area 1.2) que formaliza quando fracasso e produtivo vs improdutivo
+- Conecta com [[productive-failure]] (Kapur): esta nota define como o Companion *responde* a erros; a nota [[companion-productive-failure]] define quando o Companion *permite* o erro acontecer antes de intervir
 
 ## Status
 

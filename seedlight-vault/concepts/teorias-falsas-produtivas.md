@@ -30,6 +30,6 @@ O Companion precisa ir alem de "nao corrigir direto" ([[companion-erro-como-acom
 
 Dentro dos micromundos ([[companion-arquiteto-de-micromundos]]), isso e especialmente poderoso: a crianca pode construir uma "lei de movimento" errada e testar dentro do micromundo. O feedback vem do ambiente, nao do Companion dizendo "errado". A crianca descobre sozinha que sua teoria nao funciona e refina — acomodacao pura dos [[esquemas-mentais]].
 
-A tensao pratica e que o Companion precisa distinguir quando deixar a crianca explorar uma teoria falsa (produtiva) e quando intervir (destrutiva/bloqueante). Essa decisao provavelmente depende do diagnostico continuo e conecta com Productive Failure (Kapur, Area 1.2), que formaliza quando fracasso e produtivo vs improdutivo.
+A tensao pratica e que o Companion precisa distinguir quando deixar a crianca explorar uma teoria falsa (produtiva) e quando intervir (destrutiva/bloqueante). Kapur formalizou isso em [[productive-failure]]: o sinal decisorio e o estado de engajamento da crianca, nao o tempo ou numero de erros. A nota [[companion-productive-failure]] detalha como o Companion resolve essa tensao na pratica usando o engagement detector.
 
 A capacidade de modelos pequenos fazerem essa distincao e uma questao aberta para a Fase 2.
