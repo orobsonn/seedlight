@@ -108,6 +108,17 @@ Regra: maximo 3-4 tags por nota.
 - Concept <-> Concept: relacao organica em prosa
 - Concept -> Design: implicacao (secao "Por que importa para o Seedlight")
 
+## Metodologia de Estudo
+
+O estudo e feito **via chat**, nao por leitura direta da literatura. O Claude traz o conteudo dos papers/livros, discute com perguntas socraticas, e o aprendizado emerge da conversa.
+
+**Ao entrar em uma nova area ou fase:**
+1. Ler o guia de estudos para a area
+2. Quebrar cada sub-area em topicos granulares no dashboard — com conceitos centrais + implicacoes pro Seedlight como sub-itens
+3. Marcar cada sub-item conforme for coberto na conversa
+
+Isso garante cobertura completa e tracking preciso do que foi dominado, mesmo sem leitura direta dos materiais.
+
 ## Skills Disponiveis
 
 - `/study` — inicia sessao de estudo. Le vault, identifica progresso, entra em modo de estudo conjunto

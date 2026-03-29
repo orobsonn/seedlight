@@ -71,9 +71,39 @@ last-updated: 2026-03-29
   - [x] Implicacao pro Seedlight: como coletar evidencia naturalmente
 
 **Area 6 — Equidade Algoritmica e Justica em IA**
-- [ ] 6.1 Fundamentos de Fairness em ML
-- [ ] 6.2 Bias em IA Educacional
-- [ ] 6.3 Auditoria de Bias
+
+6.1 Fundamentos de Fairness em ML
+- [x] Selbst et al. (2019) — fairness e sociotecnico, 5 armadilhas de abstracao
+  - [x] Framing, Portability, Formalism, Ripple Effect, Solutionism
+  - [x] Mapeamento das 5 armadilhas para riscos concretos no Seedlight
+  - [x] Conexao solutionism trap + SDT undermining effect
+- [x] Friedler et al. (2016) — impossibilidade de fairness, definicoes mutuamente exclusivas
+  - [x] Demographic parity, equal opportunity, calibration
+  - [x] Implicacao pro Seedlight: equal opportunity como prioridade, falso negativo como erro critico
+- [ ] Barocas, Hardt & Narayanan (fairmlbook.org) — livro-texto de referencia
+- [ ] Cathy O'Neil — Weapons of Math Destruction — contexto nao-tecnico
+
+6.2 Bias em IA Educacional
+- [ ] Kizilcec & Lee (2022) — fairness especifico para educacao
+  - [ ] Como bias se manifesta em sistemas educacionais adaptativos
+  - [ ] Implicacao pro Seedlight: riscos especificos do BKT e Companion
+- [ ] Baker & Hawn (2021) — IA em educacao amplia ou reduz desigualdade
+  - [ ] Survey de casos reais: quando IA educacional falhou e quando funcionou
+  - [ ] Implicacao pro Seedlight: licoes de sistemas anteriores
+- [ ] Ekowo & Palmer (2016) — modelos preditivos em educacao sem perpetuar bias
+  - [ ] Guia pratico para Predictive Equity
+  - [ ] Implicacao pro Seedlight: como construir o Equity Layer
+
+6.3 Auditoria de Bias
+- [ ] Model Cards (Mitchell et al. 2019) — framework de documentacao de modelos
+  - [ ] O que documentar: metricas, limitacoes, bias conhecido
+  - [ ] Implicacao pro Seedlight: padrao de transparencia para o BKT e Companion
+- [ ] Datasheets for Datasets (Gebru et al. 2021) — documentacao de datasets
+  - [ ] Implicacao pro Seedlight: documentar dados de treinamento e calibracao
+- [ ] Ferramentas: Fairlearn, AIF360, Aequitas
+  - [ ] Metricas de fairness e algoritmos de mitigacao
+  - [ ] Aequitas: distincao intervencao assistiva vs punitiva, falso negativo como erro critico
+  - [ ] Implicacao pro Seedlight: pipeline de auditoria do Equity Layer
 
 ### Fase 2 — Hardware e Modelos Pequenos (Semanas 5-8)
 
@@ -146,11 +176,11 @@ last-updated: 2026-03-29
 
 ## Contadores
 
-- **Sources estudadas:** 5
-- **Conceitos registrados:** 16
-- **Design notes:** 22
-- **Duvidas abertas:** 10
-- **Conexoes no grafo:** 74
+- **Sources estudadas:** 7
+- **Conceitos registrados:** 18
+- **Design notes:** 25
+- **Duvidas abertas:** 13
+- **Conexoes no grafo:** 89
 
 ## Sessoes Recentes
 
@@ -158,4 +188,4 @@ last-updated: 2026-03-29
 - **2026-03-26** — Piaget (esquemas, assimilacao/acomodacao, estagios) + Vygotsky (ZDP, scaffolding, MKO). 7 insights registrados. Proximo: Papert.
 - **2026-03-27** — Sessao 1: Revisao (Bloom+Piaget+Vygotsky) + Papert (construcionismo, microworlds, powerful ideas). Sessao 2: Revisao dos 4 autores + Lave & Wenger (cognicao situada, LPP). Area 1.1 concluida. Sessao 3: Mastery Learning (Bloom 1968) — dominio antes de avanco, aptidao como velocidade, 4 barreiras de escala. Proximo: SDT (Ryan & Deci).
 - **2026-03-28** — Revisao geral (5 autores + Mastery Learning; fragil em estagios Piaget e LPP) + SDT (Ryan & Deci): 3 necessidades basicas, continuum, undermining effect, contexto sustentador vs controlador. 4 insights registrados. Proximo: Productive Failure (Kapur).
-- **2026-03-29** — Sessao 1: Productive Failure (Kapur): 3 mecanismos + 3 condicoes de design, tensao suporte vs fracasso resolvida via engagement detector, BKT como decisor de tipo de instrucao. Sessao 2: Desirable Difficulties (Bjork & Bjork) — spacing, interleaving, retrieval practice, BKT com decaimento temporal. Area 1.3 completa: Triangulo NRC, ECD (Mislevy), Stealth Assessment (Shute) — evidence rules como tool do Companion, grafo pre-definido com caminho emergente. 7 insights registrados. Areas 1.1, 1.2 e 1.3 concluidas. Proximo: Area 6 (Equidade Algoritmica).
+- **2026-03-29** — Sessao 1: Productive Failure (Kapur): 3 mecanismos + 3 condicoes de design, tensao suporte vs fracasso resolvida via engagement detector, BKT como decisor de tipo de instrucao. Sessao 2: Desirable Difficulties (Bjork & Bjork) — spacing, interleaving, retrieval practice, BKT com decaimento temporal. Area 1.3 completa: Triangulo NRC, ECD (Mislevy), Stealth Assessment (Shute) — evidence rules como tool do Companion, grafo pre-definido com caminho emergente. 7 insights registrados. Areas 1.1, 1.2 e 1.3 concluidas. Sessao 3: Area 6.1 (Fundamentos de Fairness em ML) — Selbst (5 armadilhas de abstracao), Friedler (impossibilidade de fairness). Equal opportunity como metrica prioritaria, engagement detector como peca de fairness, Emergent Curriculum como vetor de bias. 5 insights registrados. Proximo: Areas 6.2 e 6.3.
