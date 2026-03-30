@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-03-29
+last-updated: 2026-03-30
 ---
 
 # Seedlight Study Dashboard
@@ -8,7 +8,7 @@ last-updated: 2026-03-29
 
 | Fase | Nome | Semanas | Status |
 |------|------|---------|--------|
-| 1 | Fundacao Conceitual | 1-4 | em andamento |
+| 1 | Fundacao Conceitual | 1-4 | concluida |
 | 2 | Hardware e Modelos Pequenos | 5-8 | nao iniciada |
 | 3 | Agentes, GraphRAG e Arquitetura | 9-12 | nao iniciada |
 | 4 | Infra Offline e Estudos de Caso | 13-16 | nao iniciada |
@@ -80,30 +80,30 @@ last-updated: 2026-03-29
 - [x] Friedler et al. (2016) — impossibilidade de fairness, definicoes mutuamente exclusivas
   - [x] Demographic parity, equal opportunity, calibration
   - [x] Implicacao pro Seedlight: equal opportunity como prioridade, falso negativo como erro critico
-- [ ] Barocas, Hardt & Narayanan (fairmlbook.org) — livro-texto de referencia
-- [ ] Cathy O'Neil — Weapons of Math Destruction — contexto nao-tecnico
+- [~] Barocas, Hardt & Narayanan (fairmlbook.org) — livro-texto de referencia (conceitos cobertos via Selbst + Friedler + Kizilcec; consultar se precisar de formalismos)
+- [~] Cathy O'Neil — Weapons of Math Destruction — contexto nao-tecnico (coberto indiretamente; consultar pra casos narrativos)
 
 6.2 Bias em IA Educacional
-- [ ] Kizilcec & Lee (2022) — fairness especifico para educacao
-  - [ ] Como bias se manifesta em sistemas educacionais adaptativos
-  - [ ] Implicacao pro Seedlight: riscos especificos do BKT e Companion
-- [ ] Baker & Hawn (2021) — IA em educacao amplia ou reduz desigualdade
-  - [ ] Survey de casos reais: quando IA educacional falhou e quando funcionou
-  - [ ] Implicacao pro Seedlight: licoes de sistemas anteriores
-- [ ] Ekowo & Palmer (2016) — modelos preditivos em educacao sem perpetuar bias
-  - [ ] Guia pratico para Predictive Equity
-  - [ ] Implicacao pro Seedlight: como construir o Equity Layer
+- [x] Kizilcec & Lee (2022) — fairness especifico para educacao
+  - [x] Como bias se manifesta em sistemas educacionais adaptativos
+  - [x] Implicacao pro Seedlight: riscos especificos do BKT e Companion
+- [x] Baker & Hawn (2021) — IA em educacao amplia ou reduz desigualdade
+  - [x] Survey de casos reais: quando IA educacional falhou e quando funcionou
+  - [x] Implicacao pro Seedlight: licoes de sistemas anteriores
+- [x] Ekowo & Palmer (2016) — modelos preditivos em educacao sem perpetuar bias
+  - [x] Guia pratico para Predictive Equity
+  - [x] Implicacao pro Seedlight: como construir o Equity Layer
 
 6.3 Auditoria de Bias
-- [ ] Model Cards (Mitchell et al. 2019) — framework de documentacao de modelos
-  - [ ] O que documentar: metricas, limitacoes, bias conhecido
-  - [ ] Implicacao pro Seedlight: padrao de transparencia para o BKT e Companion
-- [ ] Datasheets for Datasets (Gebru et al. 2021) — documentacao de datasets
-  - [ ] Implicacao pro Seedlight: documentar dados de treinamento e calibracao
-- [ ] Ferramentas: Fairlearn, AIF360, Aequitas
-  - [ ] Metricas de fairness e algoritmos de mitigacao
-  - [ ] Aequitas: distincao intervencao assistiva vs punitiva, falso negativo como erro critico
-  - [ ] Implicacao pro Seedlight: pipeline de auditoria do Equity Layer
+- [x] Model Cards (Mitchell et al. 2019) — framework de documentacao de modelos
+  - [x] O que documentar: metricas, limitacoes, bias conhecido
+  - [x] Implicacao pro Seedlight: padrao de transparencia para o BKT e Companion
+- [x] Datasheets for Datasets (Gebru et al. 2021) — documentacao de datasets
+  - [x] Implicacao pro Seedlight: documentar dados de treinamento e calibracao
+- [x] Ferramentas: Fairlearn, AIF360, Aequitas
+  - [x] Metricas de fairness e algoritmos de mitigacao
+  - [x] Aequitas: distincao intervencao assistiva vs punitiva, falso negativo como erro critico
+  - [x] Implicacao pro Seedlight: pipeline de auditoria do Equity Layer
 
 ### Fase 2 — Hardware e Modelos Pequenos (Semanas 5-8)
 
@@ -176,11 +176,11 @@ last-updated: 2026-03-29
 
 ## Contadores
 
-- **Sources estudadas:** 7
-- **Conceitos registrados:** 18
-- **Design notes:** 25
-- **Duvidas abertas:** 13
-- **Conexoes no grafo:** 89
+- **Sources estudadas:** 13
+- **Conceitos registrados:** 28
+- **Design notes:** 32
+- **Duvidas abertas:** 19
+- **Conexoes no grafo:** 140
 
 ## Sessoes Recentes
 
@@ -189,3 +189,4 @@ last-updated: 2026-03-29
 - **2026-03-27** — Sessao 1: Revisao (Bloom+Piaget+Vygotsky) + Papert (construcionismo, microworlds, powerful ideas). Sessao 2: Revisao dos 4 autores + Lave & Wenger (cognicao situada, LPP). Area 1.1 concluida. Sessao 3: Mastery Learning (Bloom 1968) — dominio antes de avanco, aptidao como velocidade, 4 barreiras de escala. Proximo: SDT (Ryan & Deci).
 - **2026-03-28** — Revisao geral (5 autores + Mastery Learning; fragil em estagios Piaget e LPP) + SDT (Ryan & Deci): 3 necessidades basicas, continuum, undermining effect, contexto sustentador vs controlador. 4 insights registrados. Proximo: Productive Failure (Kapur).
 - **2026-03-29** — Sessao 1: Productive Failure (Kapur): 3 mecanismos + 3 condicoes de design, tensao suporte vs fracasso resolvida via engagement detector, BKT como decisor de tipo de instrucao. Sessao 2: Desirable Difficulties (Bjork & Bjork) — spacing, interleaving, retrieval practice, BKT com decaimento temporal. Area 1.3 completa: Triangulo NRC, ECD (Mislevy), Stealth Assessment (Shute) — evidence rules como tool do Companion, grafo pre-definido com caminho emergente. 7 insights registrados. Areas 1.1, 1.2 e 1.3 concluidas. Sessao 3: Area 6.1 (Fundamentos de Fairness em ML) — Selbst (5 armadilhas de abstracao), Friedler (impossibilidade de fairness). Equal opportunity como metrica prioritaria, engagement detector como peca de fairness, Emergent Curriculum como vetor de bias. 5 insights registrados. Proximo: Areas 6.2 e 6.3.
+- **2026-03-30** — Area 6.2 completa: Kizilcec & Lee (pipeline de 4 etapas, feedback loop, representational vs historical bias), Baker & Hawn (casos reais, autonomia proporcional a confianca, fallback humano, postura conservadora), Ekowo & Palmer (Predictive Equity redefinido como expansao de horizonte). Area 6.3 completa: Model Cards (BKT Model Card com 3 factors), Datasheets for Datasets, pipeline de auditoria Aequitas → Fairlearn → AIF360. 10 concepts + 7 design notes registrados. **Fase 1 concluida.** Proximo: Fase 2.
