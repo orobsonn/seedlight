@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-03-30
+last-updated: 2026-03-31
 ---
 
 # Seedlight Study Dashboard
@@ -107,16 +107,102 @@ last-updated: 2026-03-30
 
 ### Fase 2 — Hardware e Modelos Pequenos (Semanas 5-8)
 
-**Area 5 — Modelos Pequenos e Inferencia em Dispositivos**
-- [ ] 5.1 Quantizacao de Modelos
-- [ ] 5.2 Modelos Candidatos para o Dispositivo
-- [ ] 5.3 Treinamento com Reinforcement Learning
-
 **Area 2 — Inteligencia Artificial para Educacao (AIED)**
-- [ ] 2.1 Intelligent Tutoring Systems
-- [ ] 2.2 Knowledge Tracing (BKT, DKT, SAKT, AKT)
-- [ ] 2.3 Open Learner Models
-- [ ] 2.4 LLMs em Educacao
+
+2.1 Intelligent Tutoring Systems (ITS)
+- [x] VanLehn (2011) — meta-analise: ITS vs tutoria humana, quao perto chegam
+  - [x] Implicacao pro Seedlight: o que a pesquisa ja validou sobre a premissa tecnica
+- [x] Cognitive Tutors (Koedinger et al. 2007) — Carnegie Learning, ITS com resultados rigorosos em escala
+  - [x] Model tracing e knowledge tracing: como o sistema rastreia o raciocinio do aluno
+  - [x] Implicacao pro Seedlight: licoes de um ITS que funcionou em escala real
+- [x] AutoTutor (Graesser et al. 2004) — ITS baseado em dialogo natural
+  - [x] Tutoring moves: como o sistema conduz o dialogo (pumping, hints, prompts)
+  - [x] Implicacao pro Seedlight: ancestral direto do que o Companion faz com LLM
+
+2.2 Knowledge Tracing — Modelando o que o Aluno Sabe
+- [x] BKT — Corbett & Anderson (1995) — o modelo original
+  - [x] 4 parametros: P(L0), P(T), P(G), P(S) — o que cada um significa
+  - [x] Como BKT estima probabilidade de dominio por conceito
+  - [x] Implicacao pro Seedlight: motor silencioso do Learner Profile, roda em qualquer hardware
+- [x] DKT — Piech et al. (2015) — deep learning entra no campo
+  - [x] RNNs para knowledge tracing: vantagens e controversias
+  - [x] Yeung & Yeung (2018) — correcoes ao DKT original
+  - [x] Implicacao pro Seedlight: por que DKT e pesado demais pro Pi vs o que ele resolve
+- [x] SAKT — Pandey & Karypis (2019) — transformers para knowledge tracing
+  - [x] Self-attention para capturar dependencias entre exercicios
+  - [x] Implicacao pro Seedlight: viabilidade no dispositivo vs ganho sobre BKT
+- [x] AKT — Ghosh, Heffernan & Lan (2020) — estado da arte com contexto
+  - [x] Atencao ao contexto: por que isso importa para aprendizagem adaptativa
+  - [x] Implicacao pro Seedlight: se vale o custo computacional vs BKT no Pi 5
+- [x] Panorama evolutivo: BKT → DKT → SAKT → AKT — o que cada geracao adicionou
+  - [x] Trade-off complexidade vs interpretabilidade vs custo computacional
+  - [x] Decisao pro Seedlight: qual modelo (ou combinacao) usar e por que
+
+2.3 Open Learner Models
+- [ ] Bull & Kay (2007) — survey fundacional: o aluno ve seu proprio modelo
+  - [ ] Por que transparencia do modelo importa para metacognicao
+  - [ ] Implicacao pro Seedlight: o mapa cognitivo que a crianca ve e possui
+- [ ] Matcha et al. (2019) — dashboards e autorregulacao
+  - [ ] Como visualizacao do progresso afeta self-regulated learning
+  - [ ] Conexao com SDT: visualizacao como suporte a competencia e autonomia
+  - [ ] Implicacao pro Seedlight: como apresentar o Learner Profile pra crianca
+- [ ] Bodily et al. (2018) — revisao sistematica do que funciona
+  - [ ] Padroes de design efetivos vs ineficazes em OLM
+  - [ ] Implicacao pro Seedlight: o que evitar no design do mapa cognitivo
+
+2.4 LLMs em Educacao — O Estado Atual
+- [ ] Tack & Piech (2022) — onde LLMs funcionam e onde falham pra tutoria
+  - [ ] Limites concretos: quando o dialogo do LLM ajuda e quando atrapalha
+  - [ ] Implicacao pro Seedlight: como o Companion compensa as fraquezas do LLM
+- [ ] Khanmigo (Khan Academy 2024) — o que o maior ITS com LLM faz
+  - [ ] Arquitetura e decisoes de design do Khanmigo
+  - [ ] Implicacao pro Seedlight: onde o Seedlight se diferencia fundamentalmente
+- [ ] Liang et al. (2023) — limites de LLMs em avaliacao/feedback
+  - [ ] O que LLMs conseguem e nao conseguem avaliar
+  - [ ] Implicacao pro Seedlight: por que o LLM nao substitui o BKT pra avaliacao
+
+**Area 5 — Modelos Pequenos e Inferencia em Dispositivos**
+
+5.1 Quantizacao de Modelos
+- [ ] Tipos de quantizacao: Q4_K_M, Q5_K_M, Q8_0
+  - [ ] O que cada nivel significa: bits, trade-off tamanho/velocidade/qualidade
+  - [ ] Implicacao pro Seedlight: qual nivel e viavel no Pi 5 com 8GB RAM
+- [ ] Importance Matrix (imatrix) — quantizacao inteligente
+  - [ ] Como identificar pesos mais importantes e preserva-los
+  - [ ] Implicacao pro Seedlight: ganho de qualidade sem custo extra de hardware
+- [ ] AWQ (Activation-Aware Weight Quantization) — ajuste pre-quantizacao
+  - [ ] Como funciona vs quantizacao naive
+- [ ] Formato GGUF — o padrao do ecossistema local
+  - [ ] Estrutura, extensibilidade, por que substituiu GGML
+  - [ ] Implicacao pro Seedlight: formato de distribuicao dos modelos no dispositivo
+- [ ] llama.cpp — inferencia em C/C++ puro
+  - [ ] Build system, benchmark tools, server mode, embedding generation
+  - [ ] Implicacao pro Seedlight: motor de inferencia do dispositivo
+
+5.2 Modelos Candidatos para o Dispositivo
+- [ ] Qwen 2.5 / Qwen 3 (1.5B) — capacidade de raciocinio, multilingue
+- [ ] Llama 3.2 (1B / 3B) — familia Meta, ultracompacto vs mais capaz
+- [ ] SmolLM2 (1.7B) — HuggingFace, eficiencia como foco
+- [ ] Phi-4-mini (3.8B) — Microsoft, forte em raciocinio, possivel limite de hardware
+- [ ] Granite 4.0 Micro — IBM, edge computing, tool use nativo
+- [ ] Benchmark comparativo no Pi 5
+  - [ ] Metricas: tok/s, qualidade em portugues, consumo RAM, consumo energia
+  - [ ] Implicacao pro Seedlight: decisao informada de qual modelo usar
+
+5.3 Treinamento com Reinforcement Learning
+- [ ] DeepSeek-R1 (2025) — RL ensina modelos a raciocinar
+  - [ ] Como GRPO funciona: sem value model, economia de memoria
+  - [ ] Por que GRPO e melhor que PPO pro Seedlight
+- [ ] DeepResearcher (Zheng et al. 2025) — RL end-to-end em ambientes reais
+  - [ ] Metodologia: como 7B treinado com RL supera modelos maiores
+  - [ ] Implicacao pro Seedlight: treinar 1.5B pra ser excepcional em tutoria
+- [ ] Search-R1 — RL pra buscar e raciocinar
+  - [ ] Tecnica aplicavel ao Companion buscando no curriculum graph
+- [ ] Pipeline de treinamento: base → SFT → RL
+  - [ ] SFT com dialogos educacionais de qualidade
+  - [ ] Reward functions pedagogicas: compreensao, nivel adequado, motivacao
+  - [ ] Viabilidade: 1.5B + GRPO + LoRA em 1x RTX 4090
+  - [ ] Implicacao pro Seedlight: o caminho de modelo generico a tutor especializado
 
 ### Fase 3 — Agentes, GraphRAG e Arquitetura (Semanas 9-12)
 
@@ -176,11 +262,11 @@ last-updated: 2026-03-30
 
 ## Contadores
 
-- **Sources estudadas:** 13
-- **Conceitos registrados:** 28
-- **Design notes:** 32
-- **Duvidas abertas:** 19
-- **Conexoes no grafo:** 140
+- **Sources estudadas:** 16
+- **Conceitos registrados:** 36
+- **Design notes:** 35
+- **Duvidas abertas:** 21
+- **Conexoes no grafo:** 162
 
 ## Sessoes Recentes
 
@@ -190,3 +276,4 @@ last-updated: 2026-03-30
 - **2026-03-28** — Revisao geral (5 autores + Mastery Learning; fragil em estagios Piaget e LPP) + SDT (Ryan & Deci): 3 necessidades basicas, continuum, undermining effect, contexto sustentador vs controlador. 4 insights registrados. Proximo: Productive Failure (Kapur).
 - **2026-03-29** — Sessao 1: Productive Failure (Kapur): 3 mecanismos + 3 condicoes de design, tensao suporte vs fracasso resolvida via engagement detector, BKT como decisor de tipo de instrucao. Sessao 2: Desirable Difficulties (Bjork & Bjork) — spacing, interleaving, retrieval practice, BKT com decaimento temporal. Area 1.3 completa: Triangulo NRC, ECD (Mislevy), Stealth Assessment (Shute) — evidence rules como tool do Companion, grafo pre-definido com caminho emergente. 7 insights registrados. Areas 1.1, 1.2 e 1.3 concluidas. Sessao 3: Area 6.1 (Fundamentos de Fairness em ML) — Selbst (5 armadilhas de abstracao), Friedler (impossibilidade de fairness). Equal opportunity como metrica prioritaria, engagement detector como peca de fairness, Emergent Curriculum como vetor de bias. 5 insights registrados. Proximo: Areas 6.2 e 6.3.
 - **2026-03-30** — Area 6.2 completa: Kizilcec & Lee (pipeline de 4 etapas, feedback loop, representational vs historical bias), Baker & Hawn (casos reais, autonomia proporcional a confianca, fallback humano, postura conservadora), Ekowo & Palmer (Predictive Equity redefinido como expansao de horizonte). Area 6.3 completa: Model Cards (BKT Model Card com 3 factors), Datasheets for Datasets, pipeline de auditoria Aequitas → Fairlearn → AIF360. 10 concepts + 7 design notes registrados. **Fase 1 concluida.** Proximo: Fase 2.
+- **2026-03-31** — Area 2.1 completa: VanLehn (ITS d=0.76 ≈ humano d=0.79, step-level feedback e decisivo), Koedinger (Cognitive Tutors, model tracing), Graesser (AutoTutor, tutoring moves). Padrao estrategista-executor: harness decide, LLM executa. Area 2.2 completa: BKT mecanica (4 parametros), evolucao BKT→DKT→SAKT→AKT (trade-off capacidade vs interpretabilidade), BKT+GraphRAG como solucao arquitetural. Discussao sobre pipeline SLM especializado (distillation+SFT+RL) e reavaliacao de premissas offline. 8 concepts + 3 design notes registrados. Proximo: Areas 2.3 e 2.4.
