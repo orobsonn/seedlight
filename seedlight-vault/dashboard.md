@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-03-31
+last-updated: 2026-04-02
 ---
 
 # Seedlight Study Dashboard
@@ -139,27 +139,27 @@ last-updated: 2026-03-31
   - [x] Decisao pro Seedlight: qual modelo (ou combinacao) usar e por que
 
 2.3 Open Learner Models
-- [ ] Bull & Kay (2007) — survey fundacional: o aluno ve seu proprio modelo
-  - [ ] Por que transparencia do modelo importa para metacognicao
-  - [ ] Implicacao pro Seedlight: o mapa cognitivo que a crianca ve e possui
-- [ ] Matcha et al. (2019) — dashboards e autorregulacao
-  - [ ] Como visualizacao do progresso afeta self-regulated learning
-  - [ ] Conexao com SDT: visualizacao como suporte a competencia e autonomia
-  - [ ] Implicacao pro Seedlight: como apresentar o Learner Profile pra crianca
-- [ ] Bodily et al. (2018) — revisao sistematica do que funciona
-  - [ ] Padroes de design efetivos vs ineficazes em OLM
-  - [ ] Implicacao pro Seedlight: o que evitar no design do mapa cognitivo
+- [x] Bull & Kay (2007) — survey fundacional: o aluno ve seu proprio modelo
+  - [x] Por que transparencia do modelo importa para metacognicao
+  - [x] Implicacao pro Seedlight: o mapa cognitivo que a crianca ve e possui
+- [x] Matcha et al. (2019) — dashboards e autorregulacao
+  - [x] Como visualizacao do progresso afeta self-regulated learning
+  - [x] Conexao com SDT: visualizacao como suporte a competencia e autonomia
+  - [x] Implicacao pro Seedlight: como apresentar o Learner Profile pra crianca
+- [x] Bodily et al. (2018) — revisao sistematica do que funciona
+  - [x] Padroes de design efetivos vs ineficazes em OLM
+  - [x] Implicacao pro Seedlight: o que evitar no design do mapa cognitivo
 
 2.4 LLMs em Educacao — O Estado Atual
-- [ ] Tack & Piech (2022) — onde LLMs funcionam e onde falham pra tutoria
-  - [ ] Limites concretos: quando o dialogo do LLM ajuda e quando atrapalha
-  - [ ] Implicacao pro Seedlight: como o Companion compensa as fraquezas do LLM
-- [ ] Khanmigo (Khan Academy 2024) — o que o maior ITS com LLM faz
-  - [ ] Arquitetura e decisoes de design do Khanmigo
-  - [ ] Implicacao pro Seedlight: onde o Seedlight se diferencia fundamentalmente
-- [ ] Liang et al. (2023) — limites de LLMs em avaliacao/feedback
-  - [ ] O que LLMs conseguem e nao conseguem avaliar
-  - [ ] Implicacao pro Seedlight: por que o LLM nao substitui o BKT pra avaliacao
+- [x] Tack & Piech (2022) — onde LLMs funcionam e onde falham pra tutoria
+  - [x] Limites concretos: quando o dialogo do LLM ajuda e quando atrapalha
+  - [x] Implicacao pro Seedlight: como o Companion compensa as fraquezas do LLM
+- [x] Khanmigo (Khan Academy 2024) — o que o maior ITS com LLM faz
+  - [x] Arquitetura e decisoes de design do Khanmigo
+  - [x] Implicacao pro Seedlight: onde o Seedlight se diferencia fundamentalmente
+- [x] Liang et al. (2023) — limites de LLMs em avaliacao/feedback
+  - [x] O que LLMs conseguem e nao conseguem avaliar
+  - [x] Implicacao pro Seedlight: por que o LLM nao substitui o BKT pra avaliacao
 
 **Area 5 — Modelos Pequenos e Inferencia em Dispositivos**
 
@@ -262,11 +262,11 @@ last-updated: 2026-03-31
 
 ## Contadores
 
-- **Sources estudadas:** 16
-- **Conceitos registrados:** 36
-- **Design notes:** 35
-- **Duvidas abertas:** 21
-- **Conexoes no grafo:** 162
+- **Sources estudadas:** 22
+- **Conceitos registrados:** 42
+- **Design notes:** 38
+- **Duvidas abertas:** 25
+- **Conexoes no grafo:** 185
 
 ## Sessoes Recentes
 
@@ -277,3 +277,4 @@ last-updated: 2026-03-31
 - **2026-03-29** — Sessao 1: Productive Failure (Kapur): 3 mecanismos + 3 condicoes de design, tensao suporte vs fracasso resolvida via engagement detector, BKT como decisor de tipo de instrucao. Sessao 2: Desirable Difficulties (Bjork & Bjork) — spacing, interleaving, retrieval practice, BKT com decaimento temporal. Area 1.3 completa: Triangulo NRC, ECD (Mislevy), Stealth Assessment (Shute) — evidence rules como tool do Companion, grafo pre-definido com caminho emergente. 7 insights registrados. Areas 1.1, 1.2 e 1.3 concluidas. Sessao 3: Area 6.1 (Fundamentos de Fairness em ML) — Selbst (5 armadilhas de abstracao), Friedler (impossibilidade de fairness). Equal opportunity como metrica prioritaria, engagement detector como peca de fairness, Emergent Curriculum como vetor de bias. 5 insights registrados. Proximo: Areas 6.2 e 6.3.
 - **2026-03-30** — Area 6.2 completa: Kizilcec & Lee (pipeline de 4 etapas, feedback loop, representational vs historical bias), Baker & Hawn (casos reais, autonomia proporcional a confianca, fallback humano, postura conservadora), Ekowo & Palmer (Predictive Equity redefinido como expansao de horizonte). Area 6.3 completa: Model Cards (BKT Model Card com 3 factors), Datasheets for Datasets, pipeline de auditoria Aequitas → Fairlearn → AIF360. 10 concepts + 7 design notes registrados. **Fase 1 concluida.** Proximo: Fase 2.
 - **2026-03-31** — Area 2.1 completa: VanLehn (ITS d=0.76 ≈ humano d=0.79, step-level feedback e decisivo), Koedinger (Cognitive Tutors, model tracing), Graesser (AutoTutor, tutoring moves). Padrao estrategista-executor: harness decide, LLM executa. Area 2.2 completa: BKT mecanica (4 parametros), evolucao BKT→DKT→SAKT→AKT (trade-off capacidade vs interpretabilidade), BKT+GraphRAG como solucao arquitetural. Discussao sobre pipeline SLM especializado (distillation+SFT+RL) e reavaliacao de premissas offline. 8 concepts + 3 design notes registrados. Proximo: Areas 2.3 e 2.4.
+- **2026-04-02** — Area 2.3 completa: Bull & Kay (OLM como metacognicao, modelo negociavel), Matcha (trajetoria > status, competencia sem undermining), Bodily (grafos > barras, padroes eficazes). Conexao espontanea OLM + micromundos Papert. Area 2.4 completa: Tack & Piech (fronteiras do LLM, caveat defasagem 2022), Khanmigo (curriculo fixo vs emergente), Liang (formativo vs somativo, hallucination em dominios abertos). Routing de intencao como solucao. 6 concepts + 3 design notes registrados. **Area 2 concluida.** Proximo: Area 5.
