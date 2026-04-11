@@ -1,5 +1,5 @@
 ---
-last-updated: 2026-04-02
+last-updated: 2026-04-11
 ---
 
 # Seedlight Study Dashboard
@@ -9,7 +9,7 @@ last-updated: 2026-04-02
 | Fase | Nome | Semanas | Status |
 |------|------|---------|--------|
 | 1 | Fundacao Conceitual | 1-4 | concluida |
-| 2 | Hardware e Modelos Pequenos | 5-8 | nao iniciada |
+| 2 | Hardware e Modelos Pequenos | 5-8 | concluida |
 | 3 | Agentes, GraphRAG e Arquitetura | 9-12 | nao iniciada |
 | 4 | Infra Offline e Estudos de Caso | 13-16 | nao iniciada |
 | 5 | Treinamento e Integracao | 17-20 | nao iniciada |
@@ -164,45 +164,50 @@ last-updated: 2026-04-02
 **Area 5 — Modelos Pequenos e Inferencia em Dispositivos**
 
 5.1 Quantizacao de Modelos
-- [ ] Tipos de quantizacao: Q4_K_M, Q5_K_M, Q8_0
-  - [ ] O que cada nivel significa: bits, trade-off tamanho/velocidade/qualidade
-  - [ ] Implicacao pro Seedlight: qual nivel e viavel no Pi 5 com 8GB RAM
-- [ ] Importance Matrix (imatrix) — quantizacao inteligente
-  - [ ] Como identificar pesos mais importantes e preserva-los
-  - [ ] Implicacao pro Seedlight: ganho de qualidade sem custo extra de hardware
-- [ ] AWQ (Activation-Aware Weight Quantization) — ajuste pre-quantizacao
-  - [ ] Como funciona vs quantizacao naive
-- [ ] Formato GGUF — o padrao do ecossistema local
-  - [ ] Estrutura, extensibilidade, por que substituiu GGML
-  - [ ] Implicacao pro Seedlight: formato de distribuicao dos modelos no dispositivo
-- [ ] llama.cpp — inferencia em C/C++ puro
-  - [ ] Build system, benchmark tools, server mode, embedding generation
-  - [ ] Implicacao pro Seedlight: motor de inferencia do dispositivo
+- [x] Tipos de quantizacao: Q4_K_M, Q5_K_M, Q8_0
+  - [x] O que cada nivel significa: bits, trade-off tamanho/velocidade/qualidade
+  - [x] Implicacao pro Seedlight: qual nivel e viavel no Pi 5 com 8GB RAM (e smartphone Android mid-range)
+- [x] Importance Matrix (imatrix) — quantizacao inteligente
+  - [x] Como identificar pesos mais importantes e preserva-los
+  - [x] Implicacao pro Seedlight: ganho de qualidade sem custo extra de hardware; calibrar com dialogos educacionais
+- [x] AWQ (Activation-Aware Weight Quantization) — ajuste pre-quantizacao
+  - [x] Como funciona vs quantizacao naive
+- [x] TurboQuant (Google 2026) — quantizacao extrema (2-3 bits) com qualidade de Q4
+  - [x] Quantizacao mista por camada + compensacao de erro em cascata
+  - [x] Implicacao pro Seedlight: abre possibilidade de modelos maiores, mas modelo pequeno especializado continua melhor estrategia
+- [x] Formato GGUF — o padrao do ecossistema local
+  - [x] Estrutura, extensibilidade, por que substituiu GGML
+  - [x] Implicacao pro Seedlight: formato de distribuicao dos modelos no dispositivo; pipeline treinar → quantizar → GGUF → llama.cpp
+- [x] llama.cpp — inferencia em C/C++ puro
+  - [x] Backends: CPU, Vulkan (GPU mobile), Metal (iOS)
+  - [x] Implicacao pro Seedlight: motor de inferencia do dispositivo, mmap pra gestao de memoria
 
 5.2 Modelos Candidatos para o Dispositivo
-- [ ] Qwen 2.5 / Qwen 3 (1.5B) — capacidade de raciocinio, multilingue
-- [ ] Llama 3.2 (1B / 3B) — familia Meta, ultracompacto vs mais capaz
-- [ ] SmolLM2 (1.7B) — HuggingFace, eficiencia como foco
-- [ ] Phi-4-mini (3.8B) — Microsoft, forte em raciocinio, possivel limite de hardware
-- [ ] Granite 4.0 Micro — IBM, edge computing, tool use nativo
-- [ ] Benchmark comparativo no Pi 5
-  - [ ] Metricas: tok/s, qualidade em portugues, consumo RAM, consumo energia
-  - [ ] Implicacao pro Seedlight: decisao informada de qual modelo usar
+- [x] Qwen 3 (1.5B) — **candidato finalista**: tokenizer multilingue bom, alta retencao pos-quant, ecossistema de fine-tuning excelente
+- [x] Gemma 4 (2B) — **candidato finalista**: Google DeepMind, tokenizer multilingue bom, alta retencao pos-quant, raciocinio solido
+- [x] Llama 3.2 (1B / 3B) — descartado: tokenizer fraco em portugues, retencao media
+- [x] SmolLM2 (1.7B) — descartado: portugues limitado, raciocinio limitado
+- [x] Phi-4-mini (3.8B) — descartado: capaz mas lento no dispositivo (3.8B no limite), retencao media
+- [x] Granite 4.0 Micro — descartado: ecossistema limitado, poucos benchmarks em portugues
+- [x] Criterios de avaliacao definidos
+  - [x] Metricas: tok/s, qualidade tokenizer em portugues, retencao pos-quantizacao, capacidade de fine-tuning, velocidade no smartphone
+  - [x] Decisao: Qwen 3 1.5B e Gemma 4 2B como finalistas. Escolha definitiva apos benchmark real na Fase 6
 
 5.3 Treinamento com Reinforcement Learning
-- [ ] DeepSeek-R1 (2025) — RL ensina modelos a raciocinar
-  - [ ] Como GRPO funciona: sem value model, economia de memoria
-  - [ ] Por que GRPO e melhor que PPO pro Seedlight
-- [ ] DeepResearcher (Zheng et al. 2025) — RL end-to-end em ambientes reais
-  - [ ] Metodologia: como 7B treinado com RL supera modelos maiores
-  - [ ] Implicacao pro Seedlight: treinar 1.5B pra ser excepcional em tutoria
-- [ ] Search-R1 — RL pra buscar e raciocinar
-  - [ ] Tecnica aplicavel ao Companion buscando no curriculum graph
-- [ ] Pipeline de treinamento: base → SFT → RL
-  - [ ] SFT com dialogos educacionais de qualidade
-  - [ ] Reward functions pedagogicas: compreensao, nivel adequado, motivacao
-  - [ ] Viabilidade: 1.5B + GRPO + LoRA em 1x RTX 4090
-  - [ ] Implicacao pro Seedlight: o caminho de modelo generico a tutor especializado
+- [x] DeepSeek-R1 (2025) — RL ensina modelos a raciocinar
+  - [x] Como GRPO funciona: sem value model, grupo de respostas como baseline, economia de 30-40% memoria
+  - [x] Por que GRPO e melhor que PPO pro Seedlight: cabe em 1x RTX 4090 com LoRA, custo R$150-500/run em cloud
+- [x] DeepResearcher (Zheng et al. 2025) — RL end-to-end em ambientes reais
+  - [x] Metodologia: 7B treinado com RL supera modelos maiores em busca+raciocinio
+  - [x] Implicacao pro Seedlight: inspiracao pra V3 (futuro), mas V2 com RAG no harness resolve sem essa complexidade
+- [x] Search-R1 — RL pra buscar e raciocinar
+  - [x] Tecnica aplicavel ao Companion buscando no curriculum graph — adiada pra V3 do pipeline incremental
+- [x] Pipeline de treinamento: base → SFT → RL
+  - [x] SFT e instrucao direta (Bloom), RL e Productive Failure (Kapur) — analogia educacional validada
+  - [x] Reward functions pedagogicas: nivel adequado (BKT como mapa da ZDP), scaffolding (tutoring moves), motivacao (SDT), correcao factual
+  - [x] Viabilidade: 1.5B + GRPO + LoRA em 1x RTX 4090 confirmada
+  - [x] Pipeline incremental: V1 (SFT+RL simples) → V2 (RAG no harness) → V3 (RL com tool use, futuro)
+  - [x] Implicacao pro Seedlight: modelo pequeno especializado > modelo grande comprimido
 
 ### Fase 3 — Agentes, GraphRAG e Arquitetura (Semanas 9-12)
 
@@ -263,10 +268,10 @@ last-updated: 2026-04-02
 ## Contadores
 
 - **Sources estudadas:** 22
-- **Conceitos registrados:** 42
-- **Design notes:** 38
-- **Duvidas abertas:** 25
-- **Conexoes no grafo:** 185
+- **Conceitos registrados:** 46
+- **Design notes:** 42
+- **Duvidas abertas:** 27
+- **Conexoes no grafo:** 203
 
 ## Sessoes Recentes
 
@@ -278,3 +283,4 @@ last-updated: 2026-04-02
 - **2026-03-30** — Area 6.2 completa: Kizilcec & Lee (pipeline de 4 etapas, feedback loop, representational vs historical bias), Baker & Hawn (casos reais, autonomia proporcional a confianca, fallback humano, postura conservadora), Ekowo & Palmer (Predictive Equity redefinido como expansao de horizonte). Area 6.3 completa: Model Cards (BKT Model Card com 3 factors), Datasheets for Datasets, pipeline de auditoria Aequitas → Fairlearn → AIF360. 10 concepts + 7 design notes registrados. **Fase 1 concluida.** Proximo: Fase 2.
 - **2026-03-31** — Area 2.1 completa: VanLehn (ITS d=0.76 ≈ humano d=0.79, step-level feedback e decisivo), Koedinger (Cognitive Tutors, model tracing), Graesser (AutoTutor, tutoring moves). Padrao estrategista-executor: harness decide, LLM executa. Area 2.2 completa: BKT mecanica (4 parametros), evolucao BKT→DKT→SAKT→AKT (trade-off capacidade vs interpretabilidade), BKT+GraphRAG como solucao arquitetural. Discussao sobre pipeline SLM especializado (distillation+SFT+RL) e reavaliacao de premissas offline. 8 concepts + 3 design notes registrados. Proximo: Areas 2.3 e 2.4.
 - **2026-04-02** — Area 2.3 completa: Bull & Kay (OLM como metacognicao, modelo negociavel), Matcha (trajetoria > status, competencia sem undermining), Bodily (grafos > barras, padroes eficazes). Conexao espontanea OLM + micromundos Papert. Area 2.4 completa: Tack & Piech (fronteiras do LLM, caveat defasagem 2022), Khanmigo (curriculo fixo vs emergente), Liang (formativo vs somativo, hallucination em dominios abertos). Routing de intencao como solucao. 6 concepts + 3 design notes registrados. **Area 2 concluida.** Proximo: Area 5.
+- **2026-04-11** — **Area 5 completa.** 5.1: quantizacao (Q4_K_M sweet spot, imatrix com calibracao educacional, AWQ, TurboQuant, GGUF+llama.cpp). 5.2: modelos candidatos — Qwen 3 1.5B e Gemma 4 2B como finalistas (tokenizer multilingue, retencao pos-quant). 5.3: GRPO (30-40% menos memoria que PPO), reward functions pedagogicas (BKT como mapa da ZDP), pipeline incremental V1→V2→V3. Mudanca de plataforma: Pi 5 → smartphone Android mid-range. 4 concepts + 3 design notes registrados. Proximo: Fase 3 (Area 3 — Grafos de Conhecimento).
